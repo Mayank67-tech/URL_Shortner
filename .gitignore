@@ -1,0 +1,20 @@
+# Build artifacts
+build/
+*.o
+*.a
+CMakeCache.txt
+CMakeFiles/
+
+# Environment
+.env
+
+# Editor / IDE
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
