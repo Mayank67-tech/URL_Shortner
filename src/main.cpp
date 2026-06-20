@@ -68,7 +68,6 @@ int main() {
     std::cout << "[Config] Thread Pool: " << threadPoolSize << std::endl;
     std::cout << std::endl;
 
-    std::cout << "[Init] Starting Prometheus metrics on port " << metricsPort << "..." << std::endl;
     Metrics::instance().init("0.0.0.0:" + std::to_string(metricsPort));
 
     std::cout << "[Init] Connecting to PostgreSQL..." << std::endl;
