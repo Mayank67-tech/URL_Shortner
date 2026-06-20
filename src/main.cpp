@@ -90,6 +90,7 @@ int main() {
     hashRing.addServer("server-1");
     hashRing.addServer("server-2");
 
+    std::cout << "[Init] Setting up Consistent Hash Ring..." << std::endl;
     std::cout << "[Init] Wiring services..." << std::endl;
     UrlService urlService(db, redis, cache);
     AnalyticsService analyticsService(db, analyticsPool);
