@@ -85,6 +85,7 @@ int main() {
     std::cout << "[Init] Setting up Rate Limiter (100 req/min per IP)..." << std::endl;
     ThreadPool analyticsPool(threadPoolSize);
 
+    std::cout << "[Init] Starting Thread Pool (" << threadPoolSize << " workers)..." << std::endl;
     std::cout << "[Init] Setting up Consistent Hash Ring..." << std::endl;
     ConsistentHash hashRing(150);
     hashRing.addServer("server-1");
