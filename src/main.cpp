@@ -76,6 +76,7 @@ int main() {
     std::cout << "[Init] Connecting to PostgreSQL..." << std::endl;
     RedisClient redis(redisHost, redisPort);
 
+    std::cout << "[Init] Connecting to Redis..." << std::endl;
     std::cout << "[Init] Initializing LRU Cache (capacity: " << cacheSize << ")..." << std::endl;
     LRUCache<std::string, std::string> cache(cacheSize);
 
