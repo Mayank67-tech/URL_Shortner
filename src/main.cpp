@@ -80,7 +80,6 @@ int main() {
     LRUCache<std::string, std::string> cache(cacheSize);
 
     std::cout << "[Init] Initializing LRU Cache (capacity: " << cacheSize << ")..." << std::endl;
-    std::cout << "[Init] Setting up Rate Limiter (100 req/min per IP)..." << std::endl;
     RateLimiter rateLimiter(100.0, 100.0 / 60.0);
 
     std::cout << "[Init] Starting Thread Pool (" << threadPoolSize << " workers)..." << std::endl;
