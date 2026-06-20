@@ -74,7 +74,6 @@ int main() {
     PostgresPool db(connStr, dbPoolSize);
 
     std::cout << "[Init] Connecting to PostgreSQL..." << std::endl;
-    std::cout << "[Init] Connecting to Redis..." << std::endl;
     RedisClient redis(redisHost, redisPort);
 
     std::cout << "[Init] Initializing LRU Cache (capacity: " << cacheSize << ")..." << std::endl;
