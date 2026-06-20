@@ -102,6 +102,7 @@ int main() {
         .methods("GET"_method, "POST"_method, "DELETE"_method, "OPTIONS"_method)
         .headers("Content-Type", "Authorization");
 
+    std::cout << "[Init] Registering routes..." << std::endl;
     CROW_ROUTE(app, "/")
     ([]() {
         crow::json::wvalue response;
