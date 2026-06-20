@@ -118,6 +118,7 @@ int main() {
         return resp;
     });
 
+    std::cout << "[Init] Wiring services..." << std::endl;
     std::cout << "[Init] Registering routes..." << std::endl;
     ShortenController::registerRoutes(app, urlService, rateLimiter);
     AnalyticsController::registerRoutes(app, analyticsService, rateLimiter);
