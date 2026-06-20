@@ -86,7 +86,6 @@ int main() {
     ThreadPool analyticsPool(threadPoolSize);
 
     std::cout << "[Init] Starting Thread Pool (" << threadPoolSize << " workers)..." << std::endl;
-    std::cout << "[Init] Setting up Consistent Hash Ring..." << std::endl;
     ConsistentHash hashRing(150);
     hashRing.addServer("server-1");
     hashRing.addServer("server-2");
