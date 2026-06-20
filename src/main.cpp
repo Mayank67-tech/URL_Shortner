@@ -83,7 +83,6 @@ int main() {
     RateLimiter rateLimiter(100.0, 100.0 / 60.0);
 
     std::cout << "[Init] Setting up Rate Limiter (100 req/min per IP)..." << std::endl;
-    std::cout << "[Init] Starting Thread Pool (" << threadPoolSize << " workers)..." << std::endl;
     ThreadPool analyticsPool(threadPoolSize);
 
     std::cout << "[Init] Setting up Consistent Hash Ring..." << std::endl;
