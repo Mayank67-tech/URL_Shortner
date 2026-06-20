@@ -73,6 +73,7 @@ int main() {
     std::cout << "[Init] Starting Prometheus metrics on port " << metricsPort << "..." << std::endl;
     PostgresPool db(connStr, dbPoolSize);
 
+    std::cout << "[Init] Connecting to PostgreSQL..." << std::endl;
     std::cout << "[Init] Connecting to Redis..." << std::endl;
     RedisClient redis(redisHost, redisPort);
 
