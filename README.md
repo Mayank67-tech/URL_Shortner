@@ -33,7 +33,7 @@ A high-performance, horizontally-scalable URL shortener built in **C++17**, desi
 ## Quick Start
 
 ```bash
-docker compose up --build
+docker compose up --build --detach
 ```
 
 | Service | Port | Credentials |
