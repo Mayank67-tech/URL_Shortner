@@ -1,7 +1,6 @@
 # Thread-Safe Distributed URL Shortener
 
 A high-performance, horizontally-scalable URL shortener built in **C++17**, designed for 100K+ URLs and millions of reads per day.
-Supports horizontal scaling across multi-node clusters.
 
 ## Architecture
 
