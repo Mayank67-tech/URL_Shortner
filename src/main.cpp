@@ -70,6 +70,7 @@ int main() {
 
     Metrics::instance().init("0.0.0.0:" + std::to_string(metricsPort));
 
+    std::cout << "[Init] Starting Prometheus metrics on port " << metricsPort << "..." << std::endl;
     std::cout << "[Init] Connecting to PostgreSQL..." << std::endl;
     PostgresPool db(connStr, dbPoolSize);
 
